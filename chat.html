@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat with ur friends!</title>
+
+        <!-- Boostrap links-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!-- font-family: 'Montserrat', sans-serif; basic -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Open Sans', sans-serif; header -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+        <!-- Firebase links -->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel = "stylesheet" href = "../css/chat.css">
+    </head>
+    <body>
+        <button id = "logout" onclick = "logout()" class = "btn btn-danger"><span class="glyphicon glyphicon-log-out"></span>&nbsp; &nbsp; logout</button>
+        <h3 id = "room_name"></h3>
+
+        <div id = "output"></div>
+
+        <div class = "message-holder">
+            <label>Message:</label>
+            <input id = "msg" placeholder="Type in your message" class = "form-control">
+            <button id = "send" onclick="send()" class="btn btn-success">Send</button>
+        </div>
+
+        <script src = "../js/chat.js"></script>
+    </body>
+</html>

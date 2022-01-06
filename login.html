@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in into team work</title>
+    <!-- Boostrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- font-family: 'Montserrat', sans-serif; basic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Open Sans', sans-serif; header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Firebase links -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div id = "rec-1"></div>
+    <div id = "rec-2"></div>
+    <div id = "circle"></div>
+    <div id = "wrapper">
+        
+        <div id = "content">
+            
+        </div>
+        <h1 id = "title" class = "up">Sign up</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label class = "up details">Username:</label>
+        <br>
+        
+        <input type = "text" id = "username" class = "up details-input" placeholder = "Enter your username">
+        <br>
+        <br>
+        <br>
+        <br>
+        <label class = "up details">Password:</label>
+        <br>
+        <input type = "text" id = "password" class = "up details-input" placeholder = "Enter your password">
+        <br>
+        <br>
+        <br>
+        <button class = "up" onclick = "login()" id = "login-button">Sign up!</button>
+    </div>
+
+    
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
